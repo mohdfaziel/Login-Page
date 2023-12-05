@@ -55,6 +55,7 @@
     height: 2rem;
     border-radius: 10px;
     cursor: pointer;
+    font-size: 18px;
     /* not working */
     /* transition-property: all 4s ease-in-out 0s; */
 }
