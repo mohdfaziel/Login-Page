@@ -40,6 +40,9 @@
     display: flex;
     gap:4.9rem;
 }
+.Remember p a{
+    text-decoration: none;
+}
 .Remember #check{
     cursor: pointer;
 }
@@ -69,11 +72,8 @@
     flex-direction: column;
     gap:0px;
 }
+.loginpage{
+    width: 80%;
+    height: 40%;
   }
-  @media screen and (max-width: 430px) {
-    .loginpage{
-        width: 80%;
-        height: 40%;
-    
 }
-  }
