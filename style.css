@@ -50,14 +50,14 @@
     font-size: 60px;
 }
 .btn button{
-    border:none;
-    width: 6rem;
-    height: 2rem;
+    border: none;
+    padding: 6px 25px;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 18px;
-    /* not working */
-    /* transition-property: all 4s ease-in-out 0s; */
+    font-size: 24px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 .btn button:hover{
     background-color:#d2cccc;
