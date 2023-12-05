@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Baloo Bhai 2";
+    color: #872e03;
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: url("./img/pexels-jill-burrow-6070384.jpg") no-repeat center center/cover;
+    width:100vw;
+    height:100vh;
+}
+.loginpage{
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction:column;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.553);
+    width: 45%;
+    height: 62%;
+}
+.input{
+    width:20rem;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.input input{
+    width:100%;
+    height: 2rem;
+}
+.Remember{
+    display: flex;
+    gap:4.9rem;
+}
+.Remember #check{
+    cursor: pointer;
+}
+.loginpage h1{
+    font-size: 60px;
+}
+.btn button{
+    border:none;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    /* not working */
+    /* transition-property: all 4s ease-in-out 0s; */
+}
+.btn button:hover{
+    background-color:#d2cccc;
+}
+@media screen and (max-width: 763px) {
+
+    .input{
+    width:18rem;
+    
+}
+.Remember{
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+}
+  }
+  @media screen and (max-width: 430px) {
+    .loginpage{
+        width: 80%;
+        height: 40%;
+    
+}
+  }
