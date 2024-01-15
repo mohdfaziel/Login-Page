@@ -1,24 +1,26 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Baloo Bhai 2";
     color: #872e03;
 }
-.container{
+
+.container {
     justify-content: center;
     align-items: center;
     display: flex;
     background: url("./img/pexels-jill-burrow-6070384.jpg") no-repeat center center/cover;
-    width:100vw;
-    height:100vh;
+    width: 100vw;
+    height: 100vh;
 }
-.loginpage{
+
+.loginpage {
     overflow: hidden;
     backdrop-filter: blur(5px);
     display: flex;
-    flex-direction:column;
-    gap:15px;
+    flex-direction: column;
+    gap: 15px;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -26,33 +28,40 @@
     width: 45%;
     height: 62%;
 }
-.input{
-    width:20rem;
+
+.input {
+    width: 20rem;
     display: flex;
     flex-direction: column;
-    gap:5px;
+    gap: 5px;
 }
-.input input{
-    width:100%;
+
+.input input {
+    width: 100%;
     height: 2rem;
-    border:none;
+    border: none;
     border-radius: 8px;
     padding: 5px;
 }
-.Remember{
+
+.Remember {
     display: flex;
-    gap:4.8rem;
+    gap: 4.8rem;
 }
-.Remember p a{
+
+.Remember p a {
     text-decoration: none;
 }
-.Remember #check{
+
+.Remember #check {
     cursor: pointer;
 }
-.loginpage h1{
+
+.loginpage h1 {
     font-size: 60px;
 }
-.btn button{
+
+.btn button {
     border: none;
     padding: 6px 25px;
     border-radius: 10px;
@@ -62,22 +71,101 @@
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
 }
-.btn button:hover{
-    background-color:#d2cccc;
-}
-@media screen and (max-width: 763px) {
 
-    .input{
-    width:18rem;
-    
+.btn button:hover {
+    background-color: #d2cccc;
 }
-.Remember{
-    display: flex;
-    flex-direction: column;
-    gap:0px;
+
+/* mobile portrait */
+@media screen and (max-width: 320px) {
+    .loginpage {
+        gap: 15px;
+        width: 70%;
+        height: 56%;
+    }
+
+    .Remember {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .input {
+        width: 90%;
+    }
 }
-.loginpage{
-    width: 80%;
-    height: 40%;
-  }
+
+/* mobile landscape */
+@media screen and (min-width:320px) and (max-width: 480px) {
+    .loginpage {
+        gap: 15px;
+        width: 92%;
+        height: 55%;
+    }
+
+    .Remember {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .input {
+        width: 90%;
+    }
+}
+
+/* Tablet portrait: */
+@media screen and (min-width:480px) and (max-width: 768px) {
+    .loginpage {
+        gap: 15px;
+        width: 57%;
+        height: 60%;
+    }
+
+    .Remember {
+        flex-direction: column;
+        gap:2px;
+    }
+
+    .input {
+        width: 90%;
+    }
+}
+
+/* Tablet landscape: */
+@media screen and (min-width:768px) and (max-width: 1024px) {
+    .loginpage {
+        gap: 25px;
+        width: 60%;
+        height: 57%;
+    }
+
+    .Remember {
+        width: 63%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .input {
+        width: 63%;
+    }
+}
+
+/* Desktop: 1366px */
+@media screen and (min-width:1024px) {
+    .loginpage {
+        gap: 45px;
+        width: 55%;
+        height: 70%;
+    }
+
+    .Remember {
+        width: 70%;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 16px;
+    }
+
+    .input {
+        gap: 1rem;
+        width: 70%;
+    }
 }
